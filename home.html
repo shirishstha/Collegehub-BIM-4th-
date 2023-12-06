@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      width: 100%;
+      background-image: url(gg.jpg);
+     background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    ;
+    }
+
+    .header {
+      position: fixed;
+    
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding:px;
+      background: lightblue;
+     
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 15px;
+    }
+
+    .navbar .logo a {
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .navbar .links {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 35px;
+    }
+
+    .navbar .links a {
+      font-weight: 500;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 0;
+      transition: 0.2s ease;
+    }
+
+    .navbar .links a:hover {
+      color: #47b2e4;
+    }
+
+    .navbar .buttons a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+      padding: 15px 0;
+      transition: 0.2s ease;
+    }
+
+    .navbar .buttons a:not(:last-child) {
+      margin-right: 30px;
+    }
+
+  
+    /* Hamburger menu styles */
+    #menu-toggle {
+      display: none;
+    }
+
+    #hamburger-btn {
+      font-size: 1.8rem;
+      color: #fff;
+      cursor: pointer;
+      display: none;
+      order: 1;
+    }
+
+    @media screen and (max-width: 1023px) {
+      .navbar .logo a {
+        font-size: 1.5rem;
+      }
+
+      .links {
+        position: fixed;
+        left: -100%;
+        top: 75px;
+        width: 100%;
+        height: 100vh;
+        padding-top: 50px;
+        background: #175d69;
+        flex-direction: column;
+        transition: 0.3s ease;
+      }
+
+      .navbar #menu-toggle:checked~.links {
+        left: 0;
+      }
+
+      .navbar #hamburger-btn {
+        display: block;
+      }
+
+      .header .buttons {
+        display: none;
+      }
+     
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <h2 class="logo"><a href="#">COLLEGE HUB
+      </a></h2>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" id="hamburger-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </label>
+      <ul class="links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+</body>
+
+</html>
