@@ -37,33 +37,50 @@
 
     
  
-/*footer */
-footer {
-  background-color: lightblue ;
-  color: rgb(2, 2, 14);
-  /* padding: 0px; */
-  position: fixed;
+.footer{
+  background-color: black;
+  color: white;
+ 
   bottom: 0;
-  height:10%;
-  width: 100%;
-  list-style: none;
-
-  
+  width: 99%;
 }
-p{
+
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  padding: 20px;
+  box-sizing: border-box;
+  flex: 1;
+}
+.footer-section h2 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.copyright {
   text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid brown;
 }
-.p1{
-  text-align: left;
-}
-.p2{
-  text-align: right;
-}
-.li{
-  list-style: none;
-  text-align: right;
-}
-
 
 
 /* slider */
@@ -137,13 +154,13 @@ button {
   }
 
   .course{
-flex: 0 0 30%;
-margin: 1em;
-padding: 1em;
-background-color: rgba(255, 255, 255, 0.856);
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-transition: transform 0.3s ease;
+    flex: 0 0 30%;
+    margin: 1em;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.856);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 22%);
+    transition: transform 0.3s ease;
 
 }
 
@@ -154,5 +171,43 @@ transition: transform 0.3s ease;
    
     border-radius: 8px;
     margin-bottom: 1em;
+
+}
+
+.college-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.college{
+  flex: 0 0 30%;
+    margin: 1em;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.856);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 22%);
+    transition: transform 0.3s ease;
+}
+.course_content{
+  margin-bottom: 10px;
+  margin-top:10%;
+  padding:20em;
+}
+
+.description{
+  padding-left:10em;
+  padding-right:10em;
+  padding-top:2em;
+
+}
+.course_title{
+  text-wrap:wrap;
+  font-weight: bold;
+  height: 50px;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
 
 }
