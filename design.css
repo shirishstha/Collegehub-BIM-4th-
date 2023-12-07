@@ -37,12 +37,64 @@
 
     
  
+<<<<<<< HEAD
 .footer{
   background-color: black;
   color: white;
   
   bottom: 0;
   width: 99%;
+=======
+/*footer */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+.footer{
+  background-color: white;
+  color: rgb(0, 0, 0);
+  padding: 1px;
+  position: fixed;
+  bottom: 0;
+  width: 99%;
+}
+
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  padding: 10px;
+  box-sizing: border-box;
+  flex: 1;
+}
+.footer-section h2 {
+  margin-bottom: 1px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid brown;
+>>>>>>> f2dc220fd75b21b0a2159d02ab9137e98b32bcdd
 }
 
 .main{
