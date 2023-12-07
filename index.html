@@ -1,36 +1,94 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="design.css">
-</head>
-<body>
-    <header class="header">
-        <nav class="navbar">
-          <h2 class="logo"><a href="#">COLLEGE HUB
-          </a></h2>
-          <input type="checkbox" id="menu-toggle" />
-          <label for="menu-toggle" id="hamburger-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-              <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-            </svg>
-          </label>
-          <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="slider">
-        sirish
+    <title></title>
+<link rel="stylesheet" href="design.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="#" href="index.html">COllEGE<div class=logo>hub</div> </a>
+         <ul class="menu-links"> 
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="contactus.html">Contact us</a></li>
+        </ul>
+        
+      </nav>
+    </header>
 
-      </div>
     
+
+   
+
+
+  <div id="slider-container">
+    <div id="image-slider">
+      <div class="slide"><img src="Materials/bim.jpg" alt="Image 1"></div>
+      <div class="slide"><img src="Materials/kist.jpg" alt="Image 2"></div>
+      <div class="slide"><img src="Materials/orchid.jpg" alt="Image 3"></div>
+      <!-- Add more slides as needed -->
+    </div>
+
+    <div id="slider-control">
+      <button onclick="prevSlide()">Previous</button>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+  </div>
+
+  <script>
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      const slider = document.getElementById('image-slider');
+      const slideWidth = document.querySelector('.slide').offsetWidth;
+      const newPosition = -index * slideWidth;
+
+      slider.style.transform = `translateX(${newPosition}px)`;
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + document.querySelectorAll('.slide').length) % document.querySelectorAll('.slide').length;
+      showSlide(currentIndex);
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % document.querySelectorAll('.slide').length;
+      showSlide(currentIndex);
+    }
+  </script>
+
+<section class="content">
+  <h1>Enroll in your dream college</h1><br>
+  <a href="course.html"><input class="gobtn" type="button" value="Let's Go"></a>
+</section>
+
+
+<footer>
+  <ul>
+      
+ <p class="p1">Useful link</p>
+ <a href="https://tu.edu.np/">Tribhuwan University</a><br>
+ <a href="https://www.collegesnepal.com/">College Nepal</a><br>
+ <a href="https://edusanjal.com/">Edusanjal sa</a>
+ <p class="p2">
+  <li class="li"><img  src="facebook-logo-3.png" width="10px" height="10px">
+  <a href="https://www.facebook.com/sirishstha123">Facebook</a></li> <br>
+  <li class="li"><img  src="instagram.png"  width="10px" height="10px">
+  <a href="https://www.instagram.com/its_me_satkrit/">Instagram</a></li></p>
+  <p>Email:collegehubnp@gmail.com</p>
+  <p>&copy;Copyright CollegeHub </p>
+</ul>
+
+</footer>
     
+ 
+
+
+
+  
 </body>
 </html>
