@@ -1,40 +1,111 @@
-<!DOCTYPE html>
-<!-- Website - www.codingnepalweb.com -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Responsive Contact Us Form HTML CSS | CodingNepal</title>
-   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="stylesheet" href="design.css">
 
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="content">
-        <div class="image-box">
-          <img src="contact.png" alt="" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css" >
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="#" href="index.html">COllEGE<div class=logo>hub</div> </a>
+       <ul class="menu-links"> 
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+      </ul>
+      
+    </nav>
+  </header>
+  
+    <div class="contact-container">
+        <h2>Contact Us:</h2>
+    
+        <div class="contact-info-box">
+            <h3>Location</h3>
+            <div class="contact-info">
+                
+                <p>Kathmandu,Nepal</p>
+            </div>
         </div>
-        <form action="#">
-          <div class="topic">Send us a message</div>
-          <div class="input-box">
-            <input type="text" required />
-            <label>Enter your name</label>
+
+        
+        <div class="contact-info-box">
+          <h3>E-mail</h3>
+          <div class="contact-info">
+              <p>sthasiriz123@gmail.com</p>
           </div>
-          <div class="input-box">
-            <input type="text" required />
-            <label>Enter your email</label>
-          </div>
-          <div class="message-box">
-            <textarea></textarea>
-            <label>Enter your message</label>
-          </div>
-          <div class="input-box">
-            <input type="submit" value="Send Message" />
-          </div>
-        </form>
       </div>
+    
+        <div class="contact-info-box">
+            <h3>Phone Number</h3>
+            <div class="contact-info">
+                <p>+977-9861917467</p>
+            </div>
+        </div>
+    
+    
+    
+    
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Type Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+    
+            <button type="submit">Submit</button>
+        </form>
     </div>
-  </body>
+
+    <footer>
+      <div class="footer">
+        <div class="main">
+          <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>CollegeHub provides details about various college in nepal</p>
+          </div>
+          <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="https://tu.edu.np/">Tribhuwan University</a></li>
+              <li><a href="https://www.collegesnepal.com/">College Nepal</a></li>
+              <li><a href="https://edusanjal.com/">Edusanjal</a></li>
+            </ul>
+          </div>
+          <div class="footer-section link">
+            <h2>Contact Us</h2>
+            <ul>
+            <li><img  src="facebook.png" width="10px" height="10px">
+            <a href="https://www.facebook.com/sirishstha123">Facebook</a></li>
+            <li><img  src="instagram.png"  width="10px" height="10px">
+            <a href="https://www.instagram.com/its_me_satkrit/">Instagram</a></li>
+            <li><img  src="gmail.png"  width="10px" height="10px">
+            <a href="https://mail.google.com/mail/u/1/#inbox">Gmail</a></li>
+          </ul>
+          </div>
+        </div> 
+        <div class="copyright">
+          &copy; 2023 CollegeHub | All rights reserved.
+        </div>
+      </div>
+    
+    </footer>
+    
+     
+</body>
 </html>
+
+
